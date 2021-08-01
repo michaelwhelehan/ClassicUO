@@ -85,7 +85,7 @@ namespace ClassicUO.Configuration
 
         [JsonProperty("login_music_volume")] public int LoginMusicVolume { get; set; } = 70;
 
-        [JsonProperty("shard_type")] public int ShardType { get; set; } // 0 = normal (no customization), 1 = old, 2 = outlands??
+        [JsonProperty("shard_type")] public int ShardType { get; set; } // 0 = normal (no customization), 1 = old, 2 = outlands, 3 = zuluhotel
 
         [JsonProperty("fixed_time_step")] public bool FixedTimeStep { get; set; } = true;
 

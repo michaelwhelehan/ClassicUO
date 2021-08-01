@@ -136,6 +136,7 @@ namespace ClassicUO
 
             Settings.GlobalSettings = ConfigurationResolver.Load<Settings>(globalSettingsPath);
             CUOEnviroment.IsOutlands = Settings.GlobalSettings.ShardType == 2;
+            CUOEnviroment.IsZuluHotel = Settings.GlobalSettings.ShardType == 3;
 
             ReadSettingsFromArgs(args);
 
@@ -426,6 +427,11 @@ namespace ClassicUO
 
                     case "outlands":
                         CUOEnviroment.IsOutlands = true;
+
+                        break;
+                    
+                    case "zuluhotel":
+                        CUOEnviroment.IsZuluHotel = true;
 
                         break;
 

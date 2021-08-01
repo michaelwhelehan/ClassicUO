@@ -1453,4 +1453,57 @@ Client version: '{0}'</value>
   <data name="IgnoreAllianceMessages" xml:space="preserve">
     <value>Hide alliance chat</value>
   </data>
+  <!-- Start Zuluhotel Tooltips-->
+  <data name="Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="Mana" xml:space="preserve">
+    <value>Mana</value>
+  </data>
+  <data name="PhysicalProtection" xml:space="preserve">
+    <value>Physical Protection</value>
+  </data>
+  <data name="PoisonProtection" xml:space="preserve">
+    <value>Poison Protection</value>
+  </data>
+  <data name="Healbonus" xml:space="preserve">
+    <value>Healing Bonus</value>
+  </data>
+  <data name="MagicImmunity" xml:space="preserve">
+    <value>Magic Immunity</value>
+  </data>
+  <data name="MagicReflect" xml:space="preserve">
+    <value>Magic Reflection</value>
+  </data>
+  <data name="FireProtection" xml:space="preserve">
+    <value>Fire Protection</value>
+  </data>
+  <data name="WaterProtection" xml:space="preserve">
+    <value>Water Protection</value>
+  </data>
+  <data name="AirProtection" xml:space="preserve">
+    <value>Air Protection</value>
+  </data>
+  <data name="EarthProtection" xml:space="preserve">
+    <value>Earth Protection</value>
+  </data>
+  <data name="NecroProtection" xml:space="preserve">
+    <value>Necro Protection</value>
+  </data>
+  <data name="Hunger" xml:space="preserve">
+    <value>Hunger</value>
+  </data>
+  <data name="ArmorRating" xml:space="preserve">
+    <value>Armor Rating</value>
+  </data>
+  <data name="CriminalTimer" xml:space="preserve">
+    <value>Criminal Timer</value>
+  </data>
+  <data name="MurdererTimer" xml:space="preserve">
+    <value>Murderer Timer</value>
+  </data>
+  <data name="Notoriety" xml:space="preserve">
+    <value>Notoriety</value>
+  </data>
+  <!-- End Zuluhotel Tooltips-->
 </root>

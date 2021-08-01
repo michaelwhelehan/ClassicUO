@@ -65,12 +65,18 @@ namespace ClassicUO.Game.Managers
 
         public static string[] GetVars()
         {
-            if (!CUOEnviroment.IsOutlands)
+            if (CUOEnviroment.IsOutlands)
+            {
+                return Enum.GetNames(typeof(InfoBarVarsOutlands));
+            }
+            else if (CUOEnviroment.IsZuluHotel)
+            {
+                return Enum.GetNames(typeof(InfoBarVarsZuluhotel));
+            }
+            else
             {
                 return Enum.GetNames(typeof(InfoBarVars));
             }
-
-            return Enum.GetNames(typeof(InfoBarVarsOutlands));
         }
 
         public void AddItem(InfoBarItem ibi)

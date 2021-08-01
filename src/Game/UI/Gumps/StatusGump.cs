@@ -133,8 +133,16 @@ namespace ClassicUO.Game.UI.Gumps
         public static StatusGumpBase GetStatusGump()
         {
             StatusGumpBase gump;
-
-            if (!CUOEnviroment.IsOutlands)
+            
+            if (CUOEnviroment.IsOutlands)
+            {
+                gump = UIManager.GetGump<StatusGumpOutlands>();
+            }
+            else if (CUOEnviroment.IsZuluHotel)
+            {
+                gump = UIManager.GetGump<StatusGumpZuluhotel>();
+            }
+            else
             {
                 if (ProfileManager.CurrentProfile.UseOldStatusGump)
                 {
@@ -145,12 +153,7 @@ namespace ClassicUO.Game.UI.Gumps
                     gump = UIManager.GetGump<StatusGumpModern>();
                 }
             }
-            else
-            {
-                gump = UIManager.GetGump<StatusGumpOutlands>();
-            }
-
-
+            
             gump?.SetInScreen();
 
             return gump;
@@ -160,7 +163,15 @@ namespace ClassicUO.Game.UI.Gumps
         {
             StatusGumpBase gump;
 
-            if (!CUOEnviroment.IsOutlands)
+            if (CUOEnviroment.IsOutlands)
+            {
+                gump = new StatusGumpOutlands();
+            }
+            else if (CUOEnviroment.IsZuluHotel)
+            {
+                gump = new StatusGumpZuluhotel();
+            }
+            else
             {
                 if (Client.Version < ClientVersion.CV_308Z || ProfileManager.CurrentProfile.UseOldStatusGump)
                 {
@@ -170,10 +181,6 @@ namespace ClassicUO.Game.UI.Gumps
                 {
                     gump = new StatusGumpModern();
                 }
-            }
-            else
-            {
-                gump = new StatusGumpOutlands();
             }
 
             gump.X = x;

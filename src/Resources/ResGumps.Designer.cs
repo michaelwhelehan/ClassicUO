@@ -133,6 +133,15 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Air Protection.
+        /// </summary>
+        public static string AirProtection {
+            get {
+                return ResourceManager.GetString("AirProtection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to All.
         /// </summary>
         public static string All {
@@ -237,6 +246,15 @@ namespace ClassicUO.Resources {
         public static string Armor {
             get {
                 return ResourceManager.GetString("Armor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Armor Rating.
+        /// </summary>
+        public static string ArmorRating {
+            get {
+                return ResourceManager.GetString("ArmorRating", resourceCulture);
             }
         }
         
@@ -889,6 +907,15 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Criminal Timer.
+        /// </summary>
+        public static string CriminalTimer {
+            get {
+                return ResourceManager.GetString("CriminalTimer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ClassicUO Version {0}.
         /// </summary>
         public static string CUOVersion0 {
@@ -1159,6 +1186,15 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Earth Protection.
+        /// </summary>
+        public static string EarthProtection {
+            get {
+                return ResourceManager.GetString("EarthProtection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [Emote]: .
         /// </summary>
         public static string Emote {
@@ -1354,6 +1390,15 @@ namespace ClassicUO.Resources {
         public static string FilterTypeFormatON {
             get {
                 return ResourceManager.GetString("FilterTypeFormatON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fire Protection.
+        /// </summary>
+        public static string FireProtection {
+            get {
+                return ResourceManager.GetString("FireProtection", resourceCulture);
             }
         }
         
@@ -1610,6 +1655,15 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Healing Bonus.
+        /// </summary>
+        public static string Healbonus {
+            get {
+                return ResourceManager.GetString("Healbonus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Help.
         /// </summary>
         public static string Help {
@@ -1840,6 +1894,15 @@ namespace ClassicUO.Resources {
         public static string HPType_None {
             get {
                 return ResourceManager.GetString("HPType_None", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hunger.
+        /// </summary>
+        public static string Hunger {
+            get {
+                return ResourceManager.GetString("Hunger", resourceCulture);
             }
         }
         
@@ -2206,11 +2269,38 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Magic Immunity.
+        /// </summary>
+        public static string MagicImmunity {
+            get {
+                return ResourceManager.GetString("MagicImmunity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magic Reflection.
+        /// </summary>
+        public static string MagicReflect {
+            get {
+                return ResourceManager.GetString("MagicReflect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to M.
         /// </summary>
         public static string Male {
             get {
                 return ResourceManager.GetString("Male", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mana.
+        /// </summary>
+        public static string Mana {
+            get {
+                return ResourceManager.GetString("Mana", resourceCulture);
             }
         }
         
@@ -2315,6 +2405,15 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Murderer Timer.
+        /// </summary>
+        public static string MurdererTimer {
+            get {
+                return ResourceManager.GetString("MurdererTimer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Music.
         /// </summary>
         public static string Music {
@@ -2338,6 +2437,15 @@ namespace ClassicUO.Resources {
         public static string NamesHealthbars {
             get {
                 return ResourceManager.GetString("NamesHealthbars", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Necro Protection.
+        /// </summary>
+        public static string NecroProtection {
+            get {
+                return ResourceManager.GetString("NecroProtection", resourceCulture);
             }
         }
         
@@ -2437,6 +2545,15 @@ namespace ClassicUO.Resources {
         public static string NoteToSelf0 {
             get {
                 return ResourceManager.GetString("NoteToSelf0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notoriety.
+        /// </summary>
+        public static string Notoriety {
+            get {
+                return ResourceManager.GetString("Notoriety", resourceCulture);
             }
         }
         
@@ -2639,6 +2756,15 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Physical Protection.
+        /// </summary>
+        public static string PhysicalProtection {
+            get {
+                return ResourceManager.GetString("PhysicalProtection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Physical Resistance.
         /// </summary>
         public static string PhysicalResistance {
@@ -2662,6 +2788,15 @@ namespace ClassicUO.Resources {
         public static string PoisonedColor {
             get {
                 return ResourceManager.GetString("PoisonedColor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Poison Protection.
+        /// </summary>
+        public static string PoisonProtection {
+            get {
+                return ResourceManager.GetString("PoisonProtection", resourceCulture);
             }
         }
         
@@ -3923,11 +4058,29 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Water Protection.
+        /// </summary>
+        public static string WaterProtection {
+            get {
+                return ResourceManager.GetString("WaterProtection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Weapon Damage Increase.
         /// </summary>
         public static string WeaponDamageIncrease {
             get {
                 return ResourceManager.GetString("WeaponDamageIncrease", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight.
+        /// </summary>
+        public static string Weight {
+            get {
+                return ResourceManager.GetString("Weight", resourceCulture);
             }
         }
         
