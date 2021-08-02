@@ -69,14 +69,13 @@ namespace ClassicUO.Game.Managers
             {
                 return Enum.GetNames(typeof(InfoBarVarsOutlands));
             }
-            else if (CUOEnviroment.IsZuluHotel)
+            
+            if (CUOEnviroment.IsZuluHotel)
             {
                 return Enum.GetNames(typeof(InfoBarVarsZuluhotel));
             }
-            else
-            {
-                return Enum.GetNames(typeof(InfoBarVars));
-            }
+            
+            return Enum.GetNames(typeof(InfoBarVars));
         }
 
         public void AddItem(InfoBarItem ibi)

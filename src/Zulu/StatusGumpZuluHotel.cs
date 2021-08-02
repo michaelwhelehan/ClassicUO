@@ -37,7 +37,7 @@ namespace ClassicUO.Game.UI.Gumps
                 );
             }
 
-            ushort gumpIdHp = 0x080A;
+            ushort gumpIdHp = 0x0806;
 
             if (World.Player.IsPoisoned)
             {
@@ -61,7 +61,7 @@ namespace ClassicUO.Game.UI.Gumps
             (
                 49,
                 54,
-                0x080B,
+                gumpIdHp,
                 0,
                 0
             );
@@ -70,7 +70,7 @@ namespace ClassicUO.Game.UI.Gumps
             (
                 49,
                 67,
-                0x080F,
+                gumpIdHp,
                 0,
                 0
             );
@@ -884,9 +884,9 @@ namespace ClassicUO.Game.UI.Gumps
 
         private void UpdateStatusFillBar(FillStats id, int current, int max)
         {
-            ushort gumpId = 0x080A;
-            ushort gumpMana = 0x080B;
-            ushort gumpStam = 0x080F;
+            ushort gumpId = 0x0806;
+            ushort gumpMana = 0x0806;
+            ushort gumpStam = 0x0806;
 
             if (id == FillStats.Hits)
             {

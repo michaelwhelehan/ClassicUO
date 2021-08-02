@@ -7,7 +7,7 @@ namespace ClassicUO
     {
         public static void Load()
         {
-            // Settings.GlobalSettings.ClientVersion += " zuluhotel";
+            Settings.GlobalSettings.ClientVersion += " zuluhotel";
             ZuluPackets.SetupPackets();
         }
     }

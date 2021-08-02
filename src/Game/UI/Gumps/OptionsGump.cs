@@ -936,7 +936,7 @@ namespace ClassicUO.Game.UI.Gumps
                 )
             );
 
-            _use_old_status_gump.IsVisible = !CUOEnviroment.IsOutlands;
+            _use_old_status_gump.IsVisible = !CUOEnviroment.IsOutlands && !CUOEnviroment.IsZuluHotel;
 
             section3.Add
             (
@@ -3744,7 +3744,7 @@ namespace ClassicUO.Game.UI.Gumps
             _currentProfile.EnableMousewheelScaleZoom = _zoomCheckbox.IsChecked;
             _currentProfile.RestoreScaleAfterUnpressCtrl = _restorezoomCheckbox.IsChecked;
 
-            if (!CUOEnviroment.IsOutlands && _use_old_status_gump.IsChecked != _currentProfile.UseOldStatusGump)
+            if (!CUOEnviroment.IsOutlands && !CUOEnviroment.IsZuluHotel && _use_old_status_gump.IsChecked != _currentProfile.UseOldStatusGump)
             {
                 StatusGumpBase status = StatusGumpBase.GetStatusGump();
 

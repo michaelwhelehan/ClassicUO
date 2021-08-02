@@ -23,6 +23,8 @@ namespace ClassicUO.Game.Managers
         CriminalTimer,
         MurderTimer,
         Armor,
+        SwingSpeedInc,
+        StatsCap,
         NameNotoriety
     }
 }
