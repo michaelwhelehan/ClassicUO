@@ -48,8 +48,8 @@ namespace ClassicUO.Network
             World.Player.AirProtection = (short) p.ReadUInt16BE();
             World.Player.EarthProtection = (short) p.ReadUInt16BE();
             World.Player.NecroProtection = (short) p.ReadUInt16BE();
-            World.Player.CriminalTimer = (short) p.ReadUInt16BE();
-            World.Player.MurderTimer = (short) p.ReadUInt16BE();
+            World.Player.ShortTermMurders = (short) p.ReadUInt16BE();
+            World.Player.LongTermMurders = (short) p.ReadUInt16BE();
             World.Player.DamageMin = (short) p.ReadUInt16BE();
             World.Player.DamageMax = (short) p.ReadUInt16BE();
         }

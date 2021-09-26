@@ -75,7 +75,7 @@ namespace ClassicUO.Game.UI.Gumps.Login
 
                 if (Client.Version >= ClientVersion.CV_500A)
                 {
-                    Add(new GumpPic(0, 0, 0x2329, 0));
+                    Add(new GumpPic(0, 0, 0x2336, 0));
                 }
 
                 //UO Flag
@@ -110,7 +110,7 @@ namespace ClassicUO.Game.UI.Gumps.Login
                 }
 
                 // Credits
-                Add
+                /*Add
                 (
                     new Button((int)Buttons.Credits, 0x1583, 0x1585, 0x1584)
                     {
@@ -118,7 +118,7 @@ namespace ClassicUO.Game.UI.Gumps.Login
                         Y = 385,
                         ButtonAction = ButtonAction.Activate
                     }
-                );
+                );*/
 
                 Add
                 (

@@ -748,7 +748,7 @@ when amount is or exceeds</value>
     <value>Account Name</value>
   </data>
   <data name="LoginToUO" xml:space="preserve">
-    <value>Log in to Ultima Online</value>
+    <value>Log in to Zulu Hotel</value>
   </data>
   <data name="CUOVersion0" xml:space="preserve">
     <value>ClassicUO Version {0}</value>
@@ -1496,11 +1496,11 @@ Client version: '{0}'</value>
   <data name="ArmorRating" xml:space="preserve">
     <value>Armor Rating</value>
   </data>
-  <data name="CriminalTimer" xml:space="preserve">
-    <value>Criminal Timer</value>
+  <data name="ShortTermMurders" xml:space="preserve">
+    <value>Short-term Murders</value>
   </data>
-  <data name="MurdererTimer" xml:space="preserve">
-    <value>Murderer Timer</value>
+  <data name="LongTermMurders" xml:space="preserve">
+    <value>Long-term Murders</value>
   </data>
   <data name="Notoriety" xml:space="preserve">
     <value>Notoriety</value>

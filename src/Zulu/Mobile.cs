@@ -14,7 +14,7 @@ namespace ClassicUO.Game.GameObjects
         public short EarthProtection;
         public short NecroProtection;
         public short Hunger;
-        public short CriminalTimer;
-        public short MurderTimer;
+        public short ShortTermMurders;
+        public short LongTermMurders;
     }
 }

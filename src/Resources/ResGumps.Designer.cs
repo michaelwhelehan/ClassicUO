@@ -907,15 +907,6 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Criminal Timer.
-        /// </summary>
-        public static string CriminalTimer {
-            get {
-                return ResourceManager.GetString("CriminalTimer", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ClassicUO Version {0}.
         /// </summary>
         public static string CUOVersion0 {
@@ -2196,11 +2187,20 @@ namespace ClassicUO.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Log in to Ultima Online.
+        ///   Looks up a localized string similar to Log in to Zulu Hotel.
         /// </summary>
         public static string LoginToUO {
             get {
                 return ResourceManager.GetString("LoginToUO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Long-term Murders.
+        /// </summary>
+        public static string LongTermMurders {
+            get {
+                return ResourceManager.GetString("LongTermMurders", resourceCulture);
             }
         }
         
@@ -2401,15 +2401,6 @@ namespace ClassicUO.Resources {
         public static string MurdererColor {
             get {
                 return ResourceManager.GetString("MurdererColor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Murderer Timer.
-        /// </summary>
-        public static string MurdererTimer {
-            get {
-                return ResourceManager.GetString("MurdererTimer", resourceCulture);
             }
         }
         
@@ -3230,6 +3221,15 @@ namespace ClassicUO.Resources {
         public static string ShopGumpSize {
             get {
                 return ResourceManager.GetString("ShopGumpSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Short-term Murders.
+        /// </summary>
+        public static string ShortTermMurders {
+            get {
+                return ResourceManager.GetString("ShortTermMurders", resourceCulture);
             }
         }
         

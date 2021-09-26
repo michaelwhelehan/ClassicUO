@@ -20,9 +20,9 @@ namespace ClassicUO.Game.UI.Gumps
             _labels = new Label[(int)MobileStats.Max];
 
             Add(new GumpPic(0, 0, 0x2A6E, 0));
-            Add(new GumpPic(49, 41, 0x0805, 0)); // Health bar
-            Add(new GumpPic(49, 54, 0x0805, 0)); // Mana bar
-            Add(new GumpPic(49, 67, 0x0805, 0)); // Stamina bar
+            Add(new GumpPic(40, 18, 0x0805, 0)); // Health bar
+            Add(new GumpPic(40, 31, 0x0805, 0)); // Mana bar
+            Add(new GumpPic(40, 44, 0x0805, 0)); // Stamina bar
 
             if (Client.Version >= ClientVersion.CV_5020)
             {
@@ -30,7 +30,7 @@ namespace ClassicUO.Game.UI.Gumps
                 (
                     new Button((int)ButtonType.BuffIcon, 0x7538, 0x7539, 0x7539)
                     {
-                        X = 453,
+                        X = 440,
                         Y = 25,
                         ButtonAction = ButtonAction.Activate
                     }
@@ -50,8 +50,8 @@ namespace ClassicUO.Game.UI.Gumps
 
             _fillBars[(int)FillStats.Hits] = new GumpPicWithWidth
             (
-                49,
-                41,
+                40,
+                18,
                 gumpIdHp,
                 0,
                 0
@@ -59,8 +59,8 @@ namespace ClassicUO.Game.UI.Gumps
 
             _fillBars[(int)FillStats.Mana] = new GumpPicWithWidth
             (
-                49,
-                54,
+                40,
+                31,
                 gumpIdHp,
                 0,
                 0
@@ -68,8 +68,8 @@ namespace ClassicUO.Game.UI.Gumps
 
             _fillBars[(int)FillStats.Stam] = new GumpPicWithWidth
             (
-                49,
-                67,
+                40,
+                44,
                 gumpIdHp,
                 0,
                 0
@@ -84,15 +84,15 @@ namespace ClassicUO.Game.UI.Gumps
             UpdateStatusFillBar(FillStats.Stam, World.Player.Stamina, World.Player.StaminaMax);
 
             // Stat matrix
-            int xCol1 = 72;
-            int xCol2 = 178;
-            int xCol3 = 302;
-            int xCol4 = 420;
-            int yRow1 = 104;
-            int yRow2 = 139;
-            int yRow3 = 174;
-            int yRow4 = 209;
-            int yRow5 = 244;
+            int xCol1 = 62;
+            int xCol2 = 168;
+            int xCol3 = 292;
+            int xCol4 = 410;
+            int yRow1 = 81;
+            int yRow2 = 116;
+            int yRow3 = 151;
+            int yRow4 = 186;
+            int yRow5 = 221;
 
             // Name
             Label text = new Label
@@ -105,8 +105,8 @@ namespace ClassicUO.Game.UI.Gumps
                 align: TEXT_ALIGN_TYPE.TS_CENTER
             )
             {
-                X = 196,
-                Y = 35
+                X = 190,
+                Y = 9
             };
 
             _labels[(int)MobileStats.Name] = text;
@@ -114,11 +114,11 @@ namespace ClassicUO.Game.UI.Gumps
 
 
             // Stat locks
-            Add(_lockers[(int)StatType.Str] = new GumpPic(113, 104, GetStatLockGraphic(World.Player.StrLock), 0));
+            Add(_lockers[(int)StatType.Str] = new GumpPic(104, 81, GetStatLockGraphic(World.Player.StrLock), 0));
 
-            Add(_lockers[(int)StatType.Dex] = new GumpPic(113, 139, GetStatLockGraphic(World.Player.DexLock), 0));
+            Add(_lockers[(int)StatType.Dex] = new GumpPic(104, 116, GetStatLockGraphic(World.Player.DexLock), 0));
 
-            Add(_lockers[(int)StatType.Int] = new GumpPic(113, 174, GetStatLockGraphic(World.Player.IntLock), 0));
+            Add(_lockers[(int)StatType.Int] = new GumpPic(104, 151, GetStatLockGraphic(World.Player.IntLock), 0));
 
             _lockers[(int)StatType.Str].MouseUp += (sender, e) =>
            {
@@ -265,8 +265,8 @@ namespace ClassicUO.Game.UI.Gumps
             (
                 World.Player.PhysicalResistance.ToString(),
                 MobileStats.AR,
-                413,
-                48,
+                400,
+                26,
                 alignment: TEXT_ALIGN_TYPE.TS_CENTER
             );
 
@@ -314,25 +314,25 @@ namespace ClassicUO.Game.UI.Gumps
             (
                 World.Player.Hunger.ToString(),
                 MobileStats.Hunger,
-                218,
-                74
+                208,
+                48
             );
 
             AddStatTextLabel
             (
-                World.Player.CriminalTimer.ToString(),
-                MobileStats.CriminalTimer,
-                268,
-                74,
+                World.Player.ShortTermMurders.ToString(),
+                MobileStats.ShortTermMurders,
+                258,
+                48,
                 alignment: TEXT_ALIGN_TYPE.TS_CENTER
             );
 
             AddStatTextLabel
             (
-                World.Player.MurderTimer.ToString(),
-                MobileStats.MurderTimer,
-                331,
-                74,
+                World.Player.LongTermMurders.ToString(),
+                MobileStats.LongTermMurders,
+                321,
+                48,
                 alignment: TEXT_ALIGN_TYPE.TS_CENTER
             );
 
@@ -420,8 +420,8 @@ namespace ClassicUO.Game.UI.Gumps
             );
 
             // Tooltips
-            int xCornerCol = 17;
-            int yCornerRow = 95;
+            int xCornerCol = 9;
+            int yCornerRow = 73;
             int statBoxWidth = 110;
             int statBoxHeight = 32;
             Add
@@ -688,8 +688,8 @@ namespace ClassicUO.Game.UI.Gumps
             (
                 new HitBox
                 (
-                    205,
-                    66,
+                    195,
+                    46,
                     28,
                     24,
                     ResGumps.Hunger,
@@ -701,8 +701,8 @@ namespace ClassicUO.Game.UI.Gumps
             (
                 new HitBox
                 (
-                    398,
-                    30,
+                    388,
+                    10,
                     34,
                     44,
                     ResGumps.ArmorRating,
@@ -714,11 +714,11 @@ namespace ClassicUO.Game.UI.Gumps
             (
                 new HitBox
                 (
-                    250,
-                    66,
+                    240,
+                    46,
                     45,
                     24,
-                    ResGumps.CriminalTimer,
+                    ResGumps.ShortTermMurders,
                     1
                 )
                 { CanMove = true }
@@ -727,24 +727,11 @@ namespace ClassicUO.Game.UI.Gumps
             (
                 new HitBox
                 (
-                    311,
-                    66,
+                    301,
+                    46,
                     45,
                     24,
-                    ResGumps.MurdererTimer,
-                    1
-                )
-                { CanMove = true }
-            );
-            Add
-            (
-                new HitBox
-                (
-                    210,
-                    294,
-                    55,
-                    58,
-                    ResGumps.Notoriety,
+                    ResGumps.LongTermMurders,
                     1
                 )
                 { CanMove = true }
@@ -820,9 +807,9 @@ namespace ClassicUO.Game.UI.Gumps
 
                 _labels[(int)MobileStats.NecroProtection].Text = World.Player.NecroProtection.ToString();
 
-                _labels[(int)MobileStats.CriminalTimer].Text = World.Player.CriminalTimer.ToString();
+                _labels[(int)MobileStats.ShortTermMurders].Text = World.Player.ShortTermMurders.ToString();
 
-                _labels[(int)MobileStats.MurderTimer].Text = World.Player.MurderTimer.ToString();
+                _labels[(int)MobileStats.LongTermMurders].Text = World.Player.LongTermMurders.ToString();
             }
 
             base.Update(totalTime, frameTime);
@@ -920,7 +907,7 @@ namespace ClassicUO.Game.UI.Gumps
         }
 
         // TODO: move to base class?
-        private void AddStatTextLabel(string text, MobileStats stat, int x, int y, int maxWidth = 0, ushort hue = 0x0386, TEXT_ALIGN_TYPE alignment = TEXT_ALIGN_TYPE.TS_LEFT)
+        private void AddStatTextLabel(string text, MobileStats stat, int x, int y, int maxWidth = 0, ushort hue = 0x0388, TEXT_ALIGN_TYPE alignment = TEXT_ALIGN_TYPE.TS_LEFT)
         {
             Label label = new Label
             (
@@ -967,8 +954,8 @@ namespace ClassicUO.Game.UI.Gumps
             MagicImmunity,
             MagicReflect,
             Hunger,
-            CriminalTimer,
-            MurderTimer,
+            ShortTermMurders,
+            LongTermMurders,
             Max
         }
 
